@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Rohan Coaching</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Only for quick preview (remove this if you already have style.css) */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background: #4169E1;
+      padding: 10px;
+      margin: 0;
+    }
+    .navbar ul li {
+      margin: 0 15px;
+    }
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 40px;
+      color: #4169E1;
+    }
+    .about-section {
+      padding: 40px 20px;
+    }
+    .content-box {
+      display: flex;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .content-box.reverse {
+      flex-direction: row-reverse;
+    }
+    .image-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .image-box img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .image-box img:hover {
+      transform: scale(1.05);
+    }
+    .text-box {
+      flex: 2;
+    }
+    .text-box p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .content-box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Vision & Mission Section -->
+  <section class="about-section" id="vision-mission">
+    <h2 class="section-title">Our Vision & Mission</h2>
+    <div class="content-box">
+      <div class="image-box">
+        <img src="images/vision.jpg" alt="Vision Image" />
+        <img src="images/mission.jpg" alt="Mission Image" />
+      </div>
+      <div class="text-box">
+        <p><strong>Our Vision:</strong> To empower every student with the right guidance, quality education, and strong values to succeed academically and personally.</p>
+        <p><strong>Our Mission:</strong> To provide affordable, result-oriented coaching with experienced faculty, modern teaching methods, and personal attention to each student.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Director’s Message Section -->
+  <section class="about-section" id="director-message">
+    <h2 class="section-title">Director’s Message</h2>
+    <div class="content-box reverse">
+      <div class="image-box">
+        <img src="images/director.jpg" alt="Director Photo" />
+      </div>
+      <div class="text-box">
+        <p>Welcome to <strong>Big V Academy of Commerce & Arts</strong>. Our goal is not just to teach, but to mentor, inspire, and lead students towards success. With dedication and discipline, we believe every student can achieve excellence. Let’s walk this journey together and build a brighter future.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
